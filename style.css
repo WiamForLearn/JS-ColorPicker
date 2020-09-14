@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i,
+svg,
+path {
+  pointer-events: none;
+}
+button {
+  cursor: pointer;
+}
+.color-section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.color-bar {
+  height: 80vh;
+  align-items: center;
+  position: relative;
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.color-bar h1 {
+  font-size: 3rem;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+}
+.sliders {
+  position: absolute;
+  display: Flex;
+  flex-direction: column;
+  bottom: 0%;
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  width: 80%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  pointer-events: none;
+
+  /* add adjusting */
+  transform: TranslateY(100%);
+  transition: all 0.5s ease-in-out;
+}
+.sliders button {
+  position: absolute;
+  border-top-right-radius: 1rem;
+  border: none;
+  background: rgb(73, 68, 68);
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  top: 0;
+  right: 0;
+}
+.sliders.active {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: all;
+}
+.color-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.color-option button {
+  margin: 2rem;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+}
+.bar1 {
+  background: green;
+}
+.bar2 {
+  background: rgb(219, 223, 34);
+}
+.bar3 {
+  background: rgb(214, 34, 94);
+}
+.bar4 {
+  background: rgb(138, 114, 214);
+}
+.bar5 {
+  background: rgb(20, 186, 216);
+}
+.tool-section {
+  min-height: 10rem;
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+  text-align: center;
+}
+.tool-section button {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.tool-section p {
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* slider stuff */
+input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.copy-container,
+.save-container,
+.library-container {
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: rgb(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.copy-container.active {
+  opacity: 1;
+}
+.save-container.active,
+.library-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.copy-popup,
+.library-popup,
+.save-popup {
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  transition: transform 0.5s ease;
+  transform: translateY(-2rem);
+  min-width: 30%;
+  min-height: 30vh;
+}
+
+.copy-popup h4,
+.save-popup h4,
+.library-popup h4 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.copy-popup.active {
+  transform: translateY(0rem);
+}
+.close-save,
+.close-library {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 0.5rem;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-top-right-radius: 2rem;
+  border: none;
+}
+.submit-save {
+  border: none;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.save-name {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}
+.library-popup {
+  min-width: 40%;
+  max-height: 40vh;
+  display: Flex;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+.custom-palette {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2rem;
+}
+.small-preview {
+  display: flex;
+  flex: 1;
+}
+.custom-palette h4 {
+  flex: 1;
+}
+.small-preview div {
+  height: 5rem;
+  flex: 1;
+}
+.pick-palette-btn {
+  height: 5rem;
+  border: none;
+  background: rgb(95, 92, 92);
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.2rem;
+}

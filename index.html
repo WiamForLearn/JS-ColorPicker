@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- chorma js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"
+      integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="color-section">
+      <div class="color-bar bar1">
+        <h1>#color</h1>
+        <div class="color-option">
+          <button class="filter"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustment">X</button>
+          <span>Hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="0"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="0"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            name="saturation"
+            min="0"
+            max="1"
+            step="0.01"
+            class="sat-input"
+            data-sat="0"
+          />
+        </div>
+      </div>
+      <div class="color-bar bar2">
+        <h1>#color</h1>
+        <div class="color-option">
+          <button class="filter"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustment">X</button>
+          <span>Hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="1"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="1"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            name="saturation"
+            min="0"
+            max="1"
+            step="0.01"
+            class="sat-input"
+            data-sat="1"
+          />
+        </div>
+      </div>
+      <div class="color-bar bar3">
+        <h1>#color</h1>
+        <div class="color-option">
+          <button class="filter"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustment">X</button>
+          <span>Hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="2"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="2"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            name="saturation"
+            min="0"
+            max="1"
+            step="0.01"
+            class="sat-input"
+            data-sat="2"
+          />
+        </div>
+      </div>
+      <div class="color-bar bar4">
+        <h1>#color</h1>
+        <div class="color-option">
+          <button class="filter"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustment">X</button>
+          <span>Hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="3"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="3"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            name="saturation"
+            min="0"
+            max="1"
+            step="0.01"
+            class="sat-input"
+            data-sat="3"
+          />
+        </div>
+      </div>
+      <div class="color-bar bar5">
+        <h1>#color</h1>
+        <div class="color-option">
+          <button class="filter"><i class="fas fa-sliders-h"></i></button>
+          <button class="lock"><i class="fas fa-lock-open"></i></button>
+        </div>
+        <div class="sliders">
+          <button class="close-adjustment">X</button>
+          <span>Hue</span>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            name="hue"
+            class="hue-input"
+            data-hue="4"
+          />
+          <span>Brightness</span>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            name="brightness"
+            class="bright-input"
+            data-bright="4"
+          />
+          <span>Saturation</span>
+          <input
+            type="range"
+            name="saturation"
+            min="0"
+            max="1"
+            step="0.01"
+            class="sat-input"
+            data-sat="4"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="tool-section">
+      <div class="libarly-panel">
+        <button class="option-btn library">
+          <i class="fas fa-book-open"></i>
+        </button>
+        <p>library</p>
+      </div>
+      <div class="refresh-panel">
+        <button class="option-btn refresh">
+          <i class="fas fa-sync-alt"></i>
+        </button>
+        <p>Refresh</p>
+      </div>
+      <div class="save-panel">
+        <button class="option-btn save"><i class="fas fa-save"></i></button>
+        <p>Save</p>
+      </div>
+    </section>
+    <div class="copy-container">
+      <div class="copy-popup">
+        <h3>Copied to clipboard</h3>
+        <h4>&#128077;</h4>
+      </div>
+    </div>
+    <div class="save-container">
+      <div class="save-popup">
+        <button class="close-save">X</button>
+        <h4>Give a name to your pallete</h4>
+        <input type="text" name="" max-length="35" class="save-name" id="" />
+        <button type="submit" class="submit-save">Save</button>
+      </div>
+    </div>
+    <div class="library-container">
+      <div class="library-popup">
+        <button class="close-library">X</button>
+        <h4>pick your pallete</h4>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
